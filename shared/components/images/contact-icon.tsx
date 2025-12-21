@@ -1,0 +1,22 @@
+import { SVGProps } from "react";
+
+interface ContactIconProps extends SVGProps<SVGSVGElement> {}
+
+export default function ContactIcon({ className, ...props }: ContactIconProps) {
+  return (
+    <svg
+      width="133"
+      height="130"
+      viewBox="0 0 133 130"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path
+        d="M12.4688 17C5.58496 17 0 22.585 0 29.4688C0 33.3912 1.84434 37.0799 4.9875 39.4437L61.5125 81.8375C64.4738 84.0455 68.5262 84.0455 71.4875 81.8375L128.012 39.4437C131.156 37.0799 133 33.3912 133 29.4688C133 22.585 127.415 17 120.531 17H12.4688ZM0 46.0938V100.125C0 109.295 7.45527 116.75 16.625 116.75H116.375C125.545 116.75 133 109.295 133 100.125V46.0938L76.475 88.4875C70.5523 92.9295 62.4477 92.9295 56.525 88.4875L0 46.0938Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
