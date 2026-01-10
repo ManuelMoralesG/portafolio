@@ -5,8 +5,8 @@ import TwitterIcon from "@/shared/components/images/twitter-icon";
 
 export default function ContactPage() {
   return (
-    <div className="font-roboto-mono mx-auto w-fit">
-      <h1 className="font-konkhmer mx-auto text-center text-4xl font-bold text-zinc-100">
+    <div className="font-roboto-mono relative z-10 mx-auto flex min-h-screen w-full flex-col items-center justify-center">
+      <h1 className="font-konkhmer mx-auto mb-4 text-center text-6xl font-bold text-zinc-100">
         Contact me
       </h1>
 
@@ -15,33 +15,40 @@ export default function ContactPage() {
         <p>Here&apos;s my contact information and social media links</p>
       </section>
 
-      <section>
-        <a href="mailto:manuelmoralesg2504@gmail.com">
-          <div className="bg-contact-main flex items-center justify-center gap-6 rounded-xl p-2">
-            <ContactIcon className="size-12" />
-            <p className="text-lg font-medium">manuelmoralesg2504@gmail.com</p>
-          </div>
+      <section className="mt-12 flex w-full max-w-xl flex-col gap-4">
+        <a
+          href="mailto:manuelmoralesg2504@gmail.com"
+          className="bg-contact-main hover:bg-contact-main/80 mb-4 flex w-full items-center justify-center gap-6 rounded-xl p-4 transition hover:scale-105"
+        >
+          <ContactIcon className="size-10 fill-white" />
+          <p className="text-lg font-medium">manuelmoralesg2504@gmail.com</p>
         </a>
 
-        <a target="_blank" href="#">
-          <div className="flex items-center justify-start">
-            <LinkedInIcon className="size-12" />
-            <p>José Manuel Morales</p>
-          </div>
+        <a
+          target="_blank"
+          href="https://github.com/ManuelMoralesG"
+          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
+        >
+          <GithubIcon className="fill-contact-main size-10" />
+          <p className="text-contact-main">ManuelMoralesG</p>
         </a>
 
-        <a target="_blank" href="https://github.com/ManuelMoralesG">
-          <div className="flex items-center justify-start">
-            <GithubIcon className="size-12" />
-            <p>ManuelMoralesG</p>
-          </div>
+        <a
+          target="_blank"
+          href="#"
+          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
+        >
+          <LinkedInIcon className="stroke-contact-main size-10" />
+          <p className="text-contact-main">José Manuel Morales</p>
         </a>
 
-        <a target="_blank" href="https://twitter.com/@ChepeXD4">
-          <div className="flex items-center justify-start">
-            <TwitterIcon className="size-12" />
-            <p>@ChepeXD4</p>
-          </div>
+        <a
+          target="_blank"
+          href="https://twitter.com/@ChepeXD4"
+          className="flex items-center justify-start gap-4 rounded-xl bg-zinc-100 p-1 pl-4 transition hover:scale-105 hover:bg-gray-300"
+        >
+          <TwitterIcon className="fill-contact-main size-10" />
+          <p className="text-contact-main">@ChepeXD4</p>
         </a>
       </section>
     </div>
